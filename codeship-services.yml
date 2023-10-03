@@ -9,3 +9,4 @@ scan:
     image: scan
     context: .
     dockerfile: Dockerfile-df
+  encrypted_env_file: .env.encrypted
