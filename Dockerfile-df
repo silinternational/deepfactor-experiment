@@ -1,0 +1,3 @@
+FROM public.ecr.aws/deepfactor/df/runtime:latest
+
+COPY . .

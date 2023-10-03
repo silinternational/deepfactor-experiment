@@ -1,2 +1,2 @@
-# template-public
-general template for public repositories
+# deepfactor-experiment
+experimental repo for setting up Deepfactor scans on CI/CD workflow

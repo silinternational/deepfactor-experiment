@@ -1,0 +1,11 @@
+app:
+  build:
+    image: deepfactor-experiment
+    context: .
+    dockerfile: Dockerfile
+
+scan:
+  build:
+    image: scan
+    context: .
+    dockerfile: Dockerfile-df
