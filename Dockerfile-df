@@ -1,3 +1,11 @@
-FROM public.ecr.aws/deepfactor/df/runtime:3.3.2-2273
+FROM golang:1.21 as go
+
+WORKDIR /opt
 
 COPY . .
+
+RUN go build -o app cmd/main.go
+
+FROM public.ecr.aws/deepfactor/df/runtime:3.3.2-2273
+
+COPY --from=go /opt/app .
