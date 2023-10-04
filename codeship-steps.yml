@@ -1,3 +1,7 @@
 - name: scan
   service: scan
   command: ./scan.sh
+
+- name: scan-image
+  service: scan
+  command: ./imagescan.sh
