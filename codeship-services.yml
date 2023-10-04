@@ -1,14 +1,21 @@
 app:
   build:
     image: deepfactor-experiment
-    context: .
     dockerfile: Dockerfile
 
 scan:
   build:
     image: scan
-    context: .
     dockerfile: Dockerfile-df
   encrypted_env_file: .env.encrypted
   volumes:
   - /var/run/docker.sock:/var/run/docker.sock
+
+binary:
+  build:
+    image: 369020531563.dkr.ecr.us-east-1.amazonaws.com/deepfactor-experiment
+
+awsgenerator:
+  image: codeship/aws-ecr-dockercfg-generator
+  encrypted_env_file: .env.encrypted
+  add_docker: true

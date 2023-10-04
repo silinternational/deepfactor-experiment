@@ -2,6 +2,15 @@
   service: scan
   command: ./scan.sh
 
+- name: push
+  service: binary
+  type: push
+  image_name: 369020531563.dkr.ecr.us-east-1.amazonaws.com/deepfactor-experiment
+  image_tag: develop
+  tag: develop
+  registry: https://369020531563.dkr.ecr.us-east-1.amazonaws.com
+  dockercfg_service: awsgenerator
+
 - name: scan-image
   service: scan
   command: ./imagescan.sh
