@@ -14,6 +14,7 @@ scan:
 binary:
   build:
     image: 369020531563.dkr.ecr.us-east-1.amazonaws.com/deepfactor-experiment
+    dockerfile: Dockerfile
 
 awsgenerator:
   image: codeship/aws-ecr-dockercfg-generator
