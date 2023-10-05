@@ -12,5 +12,5 @@
   dockercfg_service: awsgenerator
 
 - name: scan-image
-  service: scan
-  command: ./imagescan.sh
+  image: public.ecr.aws/deepfactor/df/runtime:3.3.2-2273
+  command: dfctl scan -f json -O results 369020531563.dkr.ecr.us-east-1.amazonaws.com/deepfactor-experiment:develop
