@@ -20,3 +20,7 @@ awsgenerator:
   image: codeship/aws-ecr-dockercfg-generator
   encrypted_env_file: .env.encrypted
   add_docker: true
+
+deepfactor:
+  image: public.ecr.aws/deepfactor/df/runtime:3.3.2-2273
+  encrypted_env_file: .env.encrypted
