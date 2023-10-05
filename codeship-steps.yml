@@ -13,4 +13,4 @@
 
 - name: scan-image
   service: deepfactor
-  command: dfctl scan -f json -O results 369020531563.dkr.ecr.us-east-1.amazonaws.com/deepfactor-experiment:develop
+  command: dfctl scan 369020531563.dkr.ecr.us-east-1.amazonaws.com/deepfactor-experiment:develop
