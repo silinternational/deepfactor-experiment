@@ -10,6 +10,6 @@ FROM alpine:3
 
 WORKDIR /usr/local/bin
 
-COPY --from:go /opt/app .
+COPY --from=go /opt/app .
 
 CMD /usr/local/bin/app
