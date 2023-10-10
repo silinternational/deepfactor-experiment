@@ -9,4 +9,4 @@ jobs:
         DF_RUN_TOKEN: ${{ secrets.DF_RUN_TOKEN }}
     steps:
     - name: Scan with Deepfactor
-      run: dfctl scan -s fs -a deepfactor-experiment .
+      run: dfctl scan -s fs -a deepfactor-experiment -c hello-world-github -V 0.0.1 .
